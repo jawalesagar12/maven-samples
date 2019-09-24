@@ -10,13 +10,19 @@
   <name>Parent</name>
   <description>Just a pom that makes it easy to build both projects at the same time.</description>
 
+<properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8.0_221</maven.compiler.source>
+    <maven.compiler.target>1.8.0_221</maven.compiler.target>
+</properties>
+
   <modules>
     <module>multi-module</module>
     <module>single-module</module>
   </modules>
 
   <prerequisites>
-    <maven>3.0.3</maven>
+    <maven>3.6.2</maven>
   </prerequisites>
 
 </project>
