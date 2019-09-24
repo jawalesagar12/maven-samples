@@ -12,9 +12,12 @@ pipeline {
 					post {
 						success {
 						echo "Build is successful" 
-                }
+						}
+					}
 				}
-			
-				}
+				stage ('Packaging'){
+					steps {
+						bat 'mvn -Dmaven.test.failure.ignore=true install' 
+						}
 		}
 		}
